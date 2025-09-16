@@ -2,5 +2,141 @@
 /* CSS Document */
 
 body {
-	background-color: blueviolet;
+	background-color: floralwhite;
+}
+
+header {background-color: rgba(58,80,112,0.19);
+	padding-bottom: 15px;}
+
+
+h1 {
+   color: midnightblue;
+   padding-top: 30px;
+   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   font-weight: 200px;
+	font-size: 50px;
+	margin-left: 35px;
+	margin-bottom: -10px;
+}
+
+li {
+	
+	list-style-type: none;
+	display:inline;
+	margin-right: 15px;
+	color: rgba(37,61,174,1.00);
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	
+}
+
+h2 {
+   color: midnightblue;
+   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   font-weight: 200px;
+	font-size: 25px;
+	margin-bottom: 0px;
+	margin-left: 35px
+	
+}
+
+h3 {
+   color: midnightblue;
+   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   font-weight: 200px;
+	font-size: 25px;
+	margin-bottom: 0px;
+	margin-left: 35px
+	
+}
+
+dl {
+    color: black;
+   font-weight: 200px;
+	font-size: 17px;
+	margin-bottom: 0px;
+	margin-left: 35px;
+	
+	
+}
+
+p1 {
+	  color: rgba(87,111,153,1.00);
+   font-weight: 200px;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-left: 37px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+	
+}
+
+p2 {
+	padding-top: 10px;
+	margin-left: 37px;
+	margin-right: 37px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    word-spacing: 0.6px;
+    color:rgba(41,41,41,1.00);
+    font-weight: 400;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+	
+}
+
+dd {
+		padding-top: 10px;
+	margin-left: 20px;
+	margin-right: 37px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 18px;
+    letter-spacing: -0.4px;
+    word-spacing: 0.6px;
+    color:rgba(41,41,41,1.00);
+    font-weight: 400;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+dt {
+	
+		padding-top: 10px;
+	margin-right: 37px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    word-spacing: 0.6px;
+    color:rgba(41,41,41,1.00);
+    font-weight: 500;
+    text-decoration: rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+h4{
+
+	  color: midnightblue;
+   font-weight: 200px;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-left: 37px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+		
+}
+
+p3 {
+		  color: rgba(87,111,153,1.00);
+   font-weight: 200px;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 600px;
+	padding-bottom: 50px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center
 }
