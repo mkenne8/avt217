@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* General Text and Background */
+body {
+  background-color: #fdf1f5;
+  margin: 0;
+  padding: 0;
+  color: #8C8C8C;
+  font-family: "helvetica-lt-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* For Collumn Setup */
+#wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;                     
+  max-width: 1200px;              
+  margin: 0 auto;
+  padding: 0px 32px;
+}
+
+/* Base for Everything */
+header {
+
+  background-color: #c96d85;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;      
+  margin-bottom: 32px;      
+}
+
+/* AVT 217 Introduction to Web Design */
+header h1 {
+  font-size: 48px;
+  margin-top:1px;
+  margin-bottom: 0px;
+  font-family: "giulia-plain", sans-serif;
+  font-weight: 700;
+}
+
+
+/* Maggie Kennedy */
+header h2  {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fdf1f5;
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px
+}
+
+/* Fall 2025 | Semester 1 */
+header h3  {
+  margin-top: 12px;
+  margin-bottom: 2px;
+  color: #fdf1f5;
+  font-family: "forma-djr-micro", sans-serif;
+  font-family: "helvetica-lt-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px
+}
+
+/* Weekly/Projects */
+h4 {
+  margin-top: 32px;
+  border-bottom: 2px solid #E7B7C9; 
+  padding-bottom: 10px;   /* Space above bar */
+  margin-bottom: 14px;   /* Text space below bar */
+  color: #c96d85;
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px
+}
+
+/* Project Side */
+.weekly, #project {
+  margin-top: 16px;
+  flex: 1;            
+  min-width: 300px;  /* Makes space equal to the weekly side */
+}
+
+/* General D Text Stuff */
+dl {
+  margin: 16px 0px;
+}
+
+/* Headers */
+dt {
+  margin-top: 2px;
+  margin-bottom: 8px;
+  color: #c96d85; 
+  font-size: 20px;
+  font-family: "helvetica-lt-pro", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+}
+
+/* Rest of Text */
+dd {
+  margin-left: 28px;
+  margin-bottom: 6px;
+}
+
+/* Fun click/hover stuff */
+a {
+  color: #D58599; 
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+}
+
+a:hover {
+  color: #91C0CE;
+  border-bottom-color: #73A9BA;
+}
