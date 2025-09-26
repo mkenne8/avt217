@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* General Stuff */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: rgba(30,30,30,1.00);
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke
+  
+}
+
+/* Header section */
+header {
+  background-color: rgba(30,30,30,1.00);
+  color: whitesmoke;
+  text-align: center;
+  padding: 32px 16px;       
+}
+
+header h1 {
+  margin: 0;
+  font-size: 38px;
+  font-family: "rl-aqva", sans-serif;
+  font-weight: 900;
+  font-style: normal
+}
+
+header p {
+  margin: 6px;
+  font-style: italic;
+  font-size: 18px;
+  color: whitesmoke
+}
+
+/* Intro section */
+#intro {
+  max-width: 800px;  
+  margin: 32px auto; 
+  padding: 0 16px;
+}
+
+#intro h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid rgba(212,212,212,1.00);
+  padding-bottom: 8px;
+  font-family: "sarvatrik-gurmukhi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#intro p {
+  margin-bottom: 16px; 
+}
+
+/* Harmony and Contrast section */
+#harmony-contrast {
+    max-width: 800px; 
+	margin: 32px auto;
+	padding: 0 16px;	
+}
+
+#harmony-contrast h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid rgba(212,212,212,1.00);
+  padding-bottom: 8px;
+  font-family: "sarvatrik-gurmukhi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#harmony-contrast p {
+  margin-bottom: 16px;
+}
+
+#principles {
+  max-width: 800px;  
+  margin: 32px auto; 
+  padding: 0 16px;	
+}
+
+#principles h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid rgba(212,212,212,1.00);
+  padding-bottom: 8px;
+  font-family: "sarvatrik-gurmukhi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+#principles h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid rgba(212,212,212,1.00);
+  padding-bottom: 8px;
+  font-family: "sarvatrik-gurmukhi", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
