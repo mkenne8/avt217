@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  text-align: center;
+  background: url("../img/thanksgiving.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#container {
+  margin-top: 32vh;
+  margin-right: 105vh;
+}
+
+
+p {
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color: antiquewhite;
+  text-shadow: 1px 1px 2px darkorange;
+  
+  opacity: 0; 
+  animation: fadeIn 1s ease-in forwards; 
+}
+
+/* Hide mobile text on desktop */
+.mobile-only {
+  display: none;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: rgba(255, 233, 213, 1.00);
+  }
+
+  p {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 54px;
+    color: darkorange;
+    align-content: center;
+    margin-bottom: 0px;
+    opacity: 1; /* make sure mobile version is visible */
+    animation: none; /* disable fade-in on mobile if you want */
+  }
+
+  #cursive {
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color: darkorange;
+    align-content: center;
+    margin-top: 0px;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+
+} /* don't forget to close the styles for mobile/
