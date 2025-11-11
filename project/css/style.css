@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ---------- BASIC RESET ---------- */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #F7F7F7;
+}
+
+.metal-mania-regular {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+header {
+  position: absolute; 
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent; 
+  z-index: 100; 
+}
+
+/* DR */
+header h1 {
+  color: #F7F7F7;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: "Metal Mania", "Impact", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+/* Home Tour Music Shop  */
+nav a {
+  color: #F7F7F7;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: 0.5px 0.5px 3px rgba(63, 63, 63, 1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6f61;
+  transform: scale(1.05);
+}
+
+/* Front Page */
+.hero {
+  background-image: url("../img/backgroundphoto.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* so it streches the entire screen vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* For the stuff that goes over my image (the dark box) */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.22); /* dark overlay for text contrast */
+  z-index: 1; /* the dark overlay JUST goes over the IMG not any text, works with 67 */
+}
+
+/* what holds the h and the p */ 
+.hero-text {
+  position: relative;
+  z-index: 2; /* keeps text above the dark overlay */
+}
+
+/* Dauphines Revival */ 
+.hero-text h2 {
+  font-family: "Metal Mania", "Impact", sans-serif;
+  font-size: 95px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Bottom Text */ 
+.hero-text p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ddd;
+}
+
+
+
+
+
+
+
+/* Merch Section */
+.merch {
+  text-align: center;
+  background: linear-gradient(to bottom right, #2e2e2e, #171719);
+  padding: 76px 20px; 
+}
+
+.merch h2 {
+  font-family: "Metal Mania", "Impact", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  text-shadow: 1.5px 1.5px 2px rgba(10, 10, 10, 1);
+}
+
+
+/* Code for ALL merch cards */
+.merch-items {
+  display: flex;
+  justify-content: center;
+  gap: 18px; /* rhe space between shirts */
+
+}
+
+/* Each merch card */
+.merch-item {
+  width: 350px; 
+  text-align: left;
+}
+
+/* Black box behind the shirt */
+.image-box {
+  background-color: rgba(32, 32, 32, 0.69);
+  padding: 14px; /* how big the shirt is compared to the box  */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box:hover {
+  background-color: rgba(42,42,42,1.00);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(-5px); /* lifts up slightly */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* drop shadow */
+}
+
+.image-box img {
+  width: 100%;
+}
+
+
+
+
+/* SHIRT */
+.merch-item .type {
+  color: #ff6f61;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+/* SHIRT NAME */
+.merch-item .title {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* PRICE */
+.merch-item p {
+  color: #ccc;
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+
+
+
+/* View More Buttom */
+.view-btn {
+  background-color: #e25b50;
+  border: none;
+  color: white;
+  padding: 12px 40px; /* where view more sits in the red box */
+  margin-top: 60px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: rgba(83,83,83,0.30);
+  transform: scale(1.03);
+}
+
+
+
+
+
+
+
+
+
+/* About */
+.about {
+  background-image: url("../img/whorwe.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh; 
+  padding: 70px 0px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: center;
+  max-width: 1000px;
+  margin-left: 200px;
+}
+
+/* About Us */
+.about-left {
+  flex: 1;
+  text-align: left;
+  margin-top: 10px
+}
+
+/* Button Layout */
+.our-story-btn {
+  background-color: #282828;
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.about-left h2 {
+  font-family: "Metal Mania", "Impact", sans-serif;
+  font-size: 110px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.9);
+  margin-top: 0;
+}
+
+.about-right {
+  flex: 1;
+  padding: 20px;
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- TOUR SECTION ---------- */
+.tour {
+  text-align: center;
+  background: linear-gradient(to bottom right, #1d1d1d, #050505);
+  padding: 50px 20px;
+}
+
+.tour h2 {
+  font-family: "Metal Mania", "Impact", sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 30px;
+   margin-top: 20px;
+}
+
+.tour img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  transition: ease, transform 0.4s ease;
+}
+
+.tour img:hover {
+   box-shadow: 0 0 25px 5px rgba(20,20,20,0.30);
+   transform: scale(1.03);
+
+}
+
+
+
+
+
+
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #111;
+  padding: 40px 30px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-left h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
