@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* Basic Header Layout */
+header {
+  position: absolute;
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent; 
+  top: 0;
+}
+
+/* DR */
+.logo {
+  color: #F7F7F7;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-family: "Metal Mania", "Impact", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Home Tour Music Shop  */
+nav a {
+  color: #F7F7F7;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: 0.5px 0.5px 3px rgba(63, 63, 63, 1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6f61;
+  transform: scale(1.05);
+}
+
+
+/* makes the TOUR part that light gray  */
+nav a.active { 
+	color: #D8D8D8; 
+}
+
+
+
+
+
+
+
+.events {
+  max-width: 1350px;
+  margin: 120px auto;
+}
+
+/* upcoming events  */
+.events h2 {
+  font-size: 34px;
+  margin-bottom: 32px;
+  cursor: pointer; /* makes the cursor white */
+}
+
+/* long boxes  */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.event {
+  background-color: #262626;
+  border: 1px solid rgba(255, 255, 255, 0.04); 
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45); /* deeper shadow on hover */
+}
+
+
+
+
+.date {
+  padding: 3px 4px;
+  font-weight: bold;
+  font-size: 46px;
+  width: 190px;
+  text-align: center;
+  text-shadow: 0.4px 0.4px 5px rgba(0, 0, 0, 1);
+}
+
+.details {
+  flex-grow: 1;
+  padding-left: 24px;
+}
+
+.details h3 {
+  margin: 0 0 4px 0; 
+  font-size: 18px;
+}
+
+.details p {
+  margin: 0;
+  color: #888;
+  font-size: 15px;
+}
+
+
+
+
+.tickets-btn {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 12px 32px;
+  border-radius: 9px;
+  cursor: pointer; /* makes the cursor white */
+  transition: background 0.3s ease;
+}
+
+.tickets-btn:hover {
+  background-color: #FF5444;
+}
+
+.crowd-image {
+  background-image: url("../img/whorwe.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh; 
+  padding: 70px 0px;
+}
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 40px 30px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* DR */
+.footer-left h3 {
+  color: #F7F7F7;
+  font-size: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: "Metal Mania", "Impact", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-right {
+  display: flex;
+  gap: 50px;
+}
+
+/* all rights reserevred */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #777;
+}
