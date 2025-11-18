@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* ---------- BASIC RESET ---------- */
+/* basic */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -25,6 +25,7 @@ header {
   padding: 20px 60px;
   background: transparent; 
   z-index: 100; 
+  top: 0;
 }
 
 /* DR */
@@ -35,8 +36,8 @@ header h1 {
   font-family: "Metal Mania", "Impact", sans-serif;
   font-weight: 400;
   font-style: normal;
-
 }
+
 
 /* Home Tour Music Shop  */
 nav a {
@@ -53,6 +54,11 @@ nav a:hover {
   color: #ff6f61;
   transform: scale(1.05);
 }
+
+nav a.active { 
+	color: #D8D8D8; 
+}
+
 
 /* Front Page */
 .hero {
@@ -96,12 +102,13 @@ nav a:hover {
   letter-spacing: 3px;
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer; /* makes the cursor white */
 }
 
 
 /* Bottom Text */ 
 .hero-text p {
-  margin-top: 10px;
+  margin-top: 6px;
   font-size: 18px;
   color: #ddd;
 }
@@ -121,7 +128,7 @@ nav a:hover {
 
 .merch h2 {
   font-family: "Metal Mania", "Impact", sans-serif;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 50px;
@@ -134,27 +141,27 @@ nav a:hover {
 .merch-items {
   display: flex;
   justify-content: center;
-  gap: 18px; /* rhe space between shirts */
+  gap: 10px; /* rhe space between shirts */
 
 }
 
 /* Each merch card */
 .merch-item {
-  width: 350px; 
+  width: 380px; 
   text-align: left;
 }
 
 /* Black box behind the shirt */
 .image-box {
-  background-color: rgba(32, 32, 32, 0.69);
+  background-color: #313131;
   padding: 14px; /* how big the shirt is compared to the box  */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
 }
 
 .image-box:hover {
-  background-color: rgba(42,42,42,1.00);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: translateY(-5px); /* lifts up slightly */
+  background-color: #232323;
   box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* drop shadow */
 }
 
@@ -168,22 +175,23 @@ nav a:hover {
 /* SHIRT */
 .merch-item .type {
   color: #ff6f61;
-  font-size: 14px;
-  margin-top: 14px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-top: 18px;
 }
 
 /* SHIRT NAME */
 .merch-item .title {
   color: #FFFFFF;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 17px;
   margin-top: 8px;
 }
 
 /* PRICE */
 .merch-item p {
-  color: #ccc;
-  font-size: 14px;
+  color: #848484;
+  font-size: 15px;
   margin: 10px 0 0;
 }
 
@@ -200,7 +208,7 @@ nav a:hover {
   cursor: pointer;
   border-radius: 20px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -251,7 +259,13 @@ nav a:hover {
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 6px;
+  transition: background 0.3s ease;
 }
+
+.our-story-btn:hover {
+  background-color: #1B1B1B;
+}
+
 
 .about-left h2 {
   font-family: "Metal Mania", "Impact", sans-serif;
@@ -263,12 +277,13 @@ nav a:hover {
   margin-top: 0;
 }
 
+/* Running text */
 .about-right {
   flex: 1;
   padding: 20px;
   color: #ddd;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 
@@ -284,7 +299,7 @@ nav a:hover {
 
 
 
-/* ---------- TOUR SECTION ---------- */
+/* Tour Section */
 .tour {
   text-align: center;
   background: linear-gradient(to bottom right, #1d1d1d, #050505);
@@ -316,43 +331,122 @@ nav a:hover {
 
 
 
-
-
-
-
-/* ---------- FOOTER ---------- */
+/* Footer */
 footer {
-  background-color: #111;
-  padding: 40px 30px;
-  font-size: 14px;
-  color: #ccc;
+    background-color: #202020;
+    color: #fff;
+    padding: 60px 40px 30px;
+    font-family: Arial, sans-serif;
 }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 100px;
 }
 
-.footer-left h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.footer-left {
+    display: flex;
+    gap: 80px; /* In relation to DR */
+    align-items: flex-start;
 }
+
+
 
 .footer-right {
-  display: flex;
-  gap: 50px;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
+
+/* DR */
+.footer-column h3 {
+    color: #F7F7F7;
+    font-size: 48px;
+    letter-spacing: 1px;
+    font-family: "Metal Mania", "Impact", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 50px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Spacing between each line of text */
+.footer-column ul li {
+    margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ff6f61;
+}
+
+
+
+.phone {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #C9C9C9;
+}
+
+.email {
+    color: #C9C9C9;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.email:hover {
+    color: #77BCF3;
+}
+
+
+
+
+/* All Rights Reserved */
 .footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 13px;
-  color: #777;
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
 }
 
+.footer-bottom p {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Privacy Policy */
+.footer-bottom a {
+    color: #888;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
 
 
 

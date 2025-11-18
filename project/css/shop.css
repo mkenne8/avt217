@@ -1,0 +1,353 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #F7F7F7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+  position: absolute;
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent; 
+  top: 0;
+  z-index: 100; 
+}
+
+
+
+/* Shop Our Merch */
+header h1 {
+    color: #F7F7F7;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: "Metal Mania", "Impact", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* Home Tour Music Shop  */
+nav a {
+  color: #F7F7F7;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: 0.5px 0.5px 3px rgba(63, 63, 63, 1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6f61;
+  transform: scale(1.05);
+}
+
+nav a.active {
+    color: #D8D8D8;
+}
+
+
+
+
+/* Front Page */
+.hero {
+    width: 100%;
+    height: 85vh;
+    background-image: url("../img/shopmerch.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Where the text sits */
+.hero-content {
+    z-index: 1;
+}
+
+
+/* Dauphines Revival */
+.hero-subtitle {
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+	padding-top: 28px;
+    color: #ccc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 500;	
+}
+
+
+/* Shop Our Merch */
+.hero-title {
+    font-family: "Metal Mania", "Impact", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F7F7F7;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+	margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+/* Shop Section */
+.shop-section {
+    padding: 60px 80px;   /* Padding on in relation to the page */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.section-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+/* Clothes that speak volume */
+.section-subtitle {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 0px;
+}
+
+
+
+/* Shop Now */
+.section-title {
+    position: relative;   
+    display: inline-block;   /* keeps underline the exact width of the text */
+    font-size: 44px;    
+    font-weight: 700;   
+    color: #F7F7F7;       
+    margin-top: 12px;      
+    margin-bottom: 0px;
+}
+
+/* Underline Bar */
+.section-title::before {
+    content: '';             /* creates the underline element */
+    position: absolute;     
+    width: 100%;             /* so the underline matches text width */
+    height: 4px;             /* underline thickness */
+    border-radius: 4px;     
+    background-color: #616161;  
+    bottom: -5px;            /* where it sits under the text */    
+    transform-origin: right; /* animation starts from the right */
+    transform: scaleX(0);    /* keeps underline invisible at start */
+    transition: transform .3s ease-in-out; 
+}
+
+/* revealing the underline */
+.section-title:hover::before {
+    transform-origin: left;  /* starts from the left */
+    transform: scaleX(1);    /* hugs the shop now */
+}
+
+
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 8px;   /* shirt to shirt spacing */
+    row-gap: 40px;  /* shirt on top of shirt spacing */
+    margin-top: 20px;
+}
+
+
+/* Just so the text part is transparent */
+.product-card {
+    background-color: transparent;
+}
+
+
+.product-image {
+    max-width: 100%;
+	padding: 10px 0px;
+    background-color: #313131;
+    transition: background-color 0.4s ease;
+    cursor: pointer;
+}
+
+.product-image:hover {
+    background-color: #232323;
+}
+
+
+
+/* Where text is in relation to the image */
+.product-info {
+    padding-top: 10px;
+}
+
+
+/* Shirt */
+.product-category {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ff6f61; 
+    margin-bottom: 0px;
+}
+
+/* Shirt Name */
+.product-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #F7F7F7;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+/* Price */
+.product-price {
+    font-size: 15px;
+    color: #848484;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #202020;
+    color: #fff;
+    padding: 60px 40px 30px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 100px;
+}
+
+.footer-left {
+    display: flex;
+    gap: 80px; /* In relation to DR */
+    align-items: flex-start;
+}
+
+
+
+.footer-right {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+/* DR */
+.footer-column h3 {
+    color: #F7F7F7;
+    font-size: 48px;
+    letter-spacing: 1px;
+    font-family: "Metal Mania", "Impact", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 50px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Spacing between each line of text */
+.footer-column ul li {
+    margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ff6f61;
+}
+
+
+
+.phone {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #C9C9C9;
+}
+
+.email {
+    color: #C9C9C9;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.email:hover {
+    color: #77BCF3;
+}
+
+
+
+
+/* All Rights Reserved */
+.footer-bottom {
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.footer-bottom p {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Privacy Policy */
+.footer-bottom a {
+    color: #888;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}

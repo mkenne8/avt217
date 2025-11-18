@@ -89,9 +89,9 @@ nav a.active {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.event:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45); /* deeper shadow on hover */
+.event:hover .date {
+  color: #ff6f61;
+  transition: color 0.25s ease;
 }
 
 
@@ -152,44 +152,119 @@ nav a.active {
 
 
 
-
 /* Footer */
 footer {
-  background-color: #111;
-  padding: 40px 30px;
-  font-size: 14px;
-  color: #ccc;
+    background-color: #202020;
+    color: #fff;
+    padding: 60px 40px 30px;
+    font-family: Arial, sans-serif;
 }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 100px;
+}
+
+.footer-left {
+    display: flex;
+    gap: 80px; /* In relation to DR */
+    align-items: flex-start;
+}
+
+
+
+.footer-right {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 
 /* DR */
-.footer-left h3 {
-  color: #F7F7F7;
-  font-size: 30px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-  font-family: "Metal Mania", "Impact", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.footer-column h3 {
+    color: #F7F7F7;
+    font-size: 48px;
+    letter-spacing: 1px;
+    font-family: "Metal Mania", "Impact", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 50px;
 }
 
-.footer-right {
-  display: flex;
-  gap: 50px;
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* all rights reserevred */
+/* Spacing between each line of text */
+.footer-column ul li {
+    margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ff6f61;
+}
+
+
+
+.phone {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #C9C9C9;
+}
+
+.email {
+    color: #C9C9C9;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.email:hover {
+    color: #77BCF3;
+}
+
+
+
+
+/* All Rights Reserved */
 .footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 13px;
-  color: #777;
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.footer-bottom p {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Privacy Policy */
+.footer-bottom a {
+    color: #888;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
 }
